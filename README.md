@@ -4,7 +4,8 @@
 
 This is a kotlin coroutines extension library for improving the development experience.
 
-> See docs at [docs]()
+> [!NOTE]
+> See docs at [docs](https://kqkqkqkqkq.github.io/koroutines/)
 
 # Using in your projects
 
@@ -20,7 +21,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    val koroutineVersion="0.1"
-    implementation("com.github.kqkqkqkqkq:koroutines-ktx:${koroutineVersion}")
+    val version = "0.1"
+    implementation("com.github.kqkqkqkqkq:koroutines:${version}")
 }
 ```

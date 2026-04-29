@@ -31,7 +31,7 @@ dependencies {
 
 dokka {
     dokkaPublications.html {
-        moduleName.set("Koroutine KTX")
+        moduleName.set("Koroutines")
         moduleVersion.set(project.version.toString())
         outputDirectory.set(layout.buildDirectory.dir("dokka/html"))
     }
@@ -42,7 +42,7 @@ publishing {
         register<MavenPublication>("gpr") {
             from(components["java"])
             groupId = "com.github.kqkqkqkqkq"
-            artifactId = "koroutines-ktx"
+            artifactId = "koroutines"
             version = "1.0.0"
         }
     }
