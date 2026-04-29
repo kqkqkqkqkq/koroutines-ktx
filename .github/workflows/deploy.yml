@@ -20,7 +20,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Generate documentation
-        run: ./gradlew :lib:dokkaHtml
+        run: ./gradlew dokkaGenerate
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
