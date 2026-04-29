@@ -33,7 +33,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.kqkqkqkqkq"
             artifactId = "koroutines"
-            version = "1.0.0"
+            version = "1.0"
         }
     }
 }
