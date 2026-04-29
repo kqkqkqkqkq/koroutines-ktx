@@ -21,7 +21,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    val version = "0.1"
+    val version = "1.0"
     implementation("com.github.kqkqkqkqkq:koroutines:${version}")
 }
 ```
