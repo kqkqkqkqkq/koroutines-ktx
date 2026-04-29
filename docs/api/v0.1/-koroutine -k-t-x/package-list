@@ -1,0 +1,7 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:ru.koroutines////PointingToDeclaration/-koroutine -k-t-x/ru.koroutines/index.html
+$dokka.location:ru.koroutines/Library///PointingToDeclaration/-koroutine -k-t-x/ru.koroutines/-library/index.html
+$dokka.location:ru.koroutines/Library/Library/#/PointingToDeclaration/-koroutine -k-t-x/ru.koroutines/-library/-library.html
+$dokka.location:ru.koroutines/Library/someLibraryMethod/#/PointingToDeclaration/-koroutine -k-t-x/ru.koroutines/-library/some-library-method.html
+ru.koroutines
