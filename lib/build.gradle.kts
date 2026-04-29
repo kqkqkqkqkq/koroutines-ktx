@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
     `java-library`
-    id("maven-publish")
-    id("org.jetbrains.dokka") version "2.2.0"
+    alias(libs.plugins.maven.publish)
+    alias(libs.plugins.dokka)
 }
 
 repositories {
@@ -17,16 +17,6 @@ java {
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
-}
-
-dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation(libs.junit.jupiter.engine)
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    api(libs.commons.math3)
-    implementation(libs.guava)
-
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
 }
 
 dokka {
@@ -46,4 +36,15 @@ publishing {
             version = "1.0.0"
         }
     }
+}
+
+dependencies {
+    testImplementation(libs.kotlin.test)
+    testImplementation(libs.junit.jupiter.engine)
+    testRuntimeOnly(libs.junit.platform.launcher)
+    api(libs.commons.math3)
+    implementation(libs.guava)
+
+    implementation(libs.kotlinx.coroutines.core)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
