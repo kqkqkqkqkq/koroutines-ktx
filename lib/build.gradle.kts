@@ -34,7 +34,6 @@ dokka {
         moduleName.set("Koroutine KTX")
         moduleVersion.set(project.version.toString())
         outputDirectory.set(layout.buildDirectory.dir("dokka/html"))
-        outputDirectory.set(rootDir.resolve("docs/api/v0.1"))
     }
 }
 
