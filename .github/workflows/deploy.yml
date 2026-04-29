@@ -29,6 +29,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
+          publish_dir: docs/api/v0.1
           publish_branch: gh-pages
           commit_message: ${{ format('Deploy docs from commit {0}', github.sha) }}
